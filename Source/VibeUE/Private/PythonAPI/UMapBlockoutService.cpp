@@ -240,7 +240,7 @@ FMapBlockoutLandcoverGrid UMapBlockoutService::LoadLandcoverGridJson(const FStri
 		const TArray<TSharedPtr<FJsonValue>>* Rows = nullptr;
 		if (!Pair.Value->TryGetArray(Rows) || Rows->Num() != N) { continue; }
 		FMapBlockoutLayerMap LM;
-		LM.LayerName = Pair.Key;
+		LM.LayerName = *Pair.Key;
 		LM.GridN = N;
 		LM.Weights.SetNumZeroed(N * N);
 		for (int32 Y = 0; Y < N; ++Y)
