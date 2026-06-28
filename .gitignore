@@ -23,6 +23,7 @@ VibeComparison.md
 *codeclip*
 
 # Unreal Engine generated files
+VibeUE.uplugin
 Binaries/
 Build/
 DerivedDataCache/
@@ -30,6 +31,9 @@ Intermediate/
 Saved/
 Plugins/*/Binaries/
 Plugins/*/Intermediate/
+
+# P4 supplies plugin content in the Mansten project workspace.
+Content/
 
 # Content exclusions (include starter content typically)
 Content/StarterContent/
